@@ -50,14 +50,19 @@ node server.js
 User Authentication
 
 POST /api/auth/register: Register a new user.
+
 POST /api/auth/login: Log in and receive a JWT.
 
 Quiz Management
 
 POST /api/quiz/create: Create a new quiz.
+
 GET /api/quiz/: Retrieve all quizzes.
+
 GET /api/quiz/:id: Retrieve details for a specific quiz.
+
 POST /api/quiz/:id/submit: Submit answers and get the score for a quiz.
+
 
 
 #Example:
