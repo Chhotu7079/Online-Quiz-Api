@@ -90,7 +90,11 @@ node server.js
 #server : http://localhost:5000
 
 1. Register a User :
+   
   Endpoint: POST /api/auth/register
+
+  Request Body:
+
 {
   "name": "abce",
   "email": "abc@gmail.com",
@@ -98,25 +102,29 @@ node server.js
 }
 
 
-2. Login
+3. Login:
+   
 Endpoint: POST /api/auth/login
+
+Request Body:
+
 {
   "email": "abc@gmail.com",
   "password": "123"
 }
 
 
-3. Create a Quiz (Authenticated Request)
+5. Create a Quiz (Authenticated Request)
+   
 Endpoint: POST /api/quiz/create
-
 
 headers:
 {
   "Authorization": "Bearer your_jwt_token_here"
 }
 
+Request Body:
 
-Request Body
 {
   "title": "Basic Quiz",
   "questions": [
@@ -135,7 +143,9 @@ Request Body
 
 
 4. Taking the Quiz and Submitting Answers (Authenticated Request)
+   
    Endpoint: POST /api/quiz/:id/submit
+   
    headers :
 {
   "Authorization": "Bearer your_jwt_token_here"
@@ -149,7 +159,9 @@ Request body:
 
 
 ##Here, answers is an array where each item represents the selected answer for each question. 
+
 The indices in the answers array correspond to the order of questions. 
+
 So, the answer 1 for the first question (2 + 2 = 4) is correct, and 2 for the second question (10 - 7 = 3) is also correct.
 
 
