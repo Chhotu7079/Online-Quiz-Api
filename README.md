@@ -5,9 +5,9 @@ Here’s a high-level overview of the project and the steps you can follow:
 #Initialize a New Project:
 
 
-mkdir online-quiz-api
-cd online-quiz-api
-npm init -y
+#mkdir online-quiz-api
+#cd online-quiz-api
+#npm init -y
 
 
 #Install Dependencies:
