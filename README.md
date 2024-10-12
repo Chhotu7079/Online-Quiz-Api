@@ -15,9 +15,13 @@ Here’s a high-level overview of the project and the steps you can follow:
 #Install Dependencies:
 
 express: Web framework for building the API.
+
 mongoose: MongoDB ODM for defining schemas and interacting with the database.
+
 bcryptjs: For password hashing.
+
 jsonwebtoken: For handling authentication tokens.
+
 body-parser: Middleware for parsing incoming request bodies.
 
 
@@ -25,20 +29,35 @@ body-parser: Middleware for parsing incoming request bodies.
 
 
 online-quiz-api/
+
 ├── config/
+
 │   └── db.js
+
 ├── controllers/
+
 │   ├── authController.js
+
 │   └── quizController.js
+
 ├── models/
+
 │   ├── User.js
+
 │   └── Quiz.js
+
 ├── routes/
+
 │   ├── authRoutes.js
+
 │   └── quizRoutes.js
+
 ├── middleware/
+
 │   └── authMiddleware.js
+
 ├── app.js
+
 └── server.js
 
 
