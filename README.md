@@ -64,6 +64,7 @@ POST /api/quiz/:id/submit: Submit answers and get the score for a quiz.
 
 
 #server : http://localhost:5000
+
 1. Register a User :
   Endpoint: POST /api/auth/register
 {
