@@ -2,9 +2,11 @@ Creating a RESTful API for a basic online quiz application using Node.js and Exp
 Here’s a high-level overview of the project and the steps you can follow:
 
 #Initialize a New Project:
+
 mkdir online-quiz-api
 cd online-quiz-api
 npm init -y
+
 
 #Install Dependencies:
 express: Web framework for building the API.
@@ -92,18 +94,21 @@ Request Body
 
 4. Taking the Quiz and Submitting Answers (Authenticated Request)
    Endpoint: POST /api/quiz/:id/submit
-headers :
+   headers :
 {
   "Authorization": "Bearer your_jwt_token_here"
 }
+
 
 Request body:
 {
   "answers": [1, 2]
 }
+
 ##Here, answers is an array where each item represents the selected answer for each question. 
 The indices in the answers array correspond to the order of questions. 
 So, the answer 1 for the first question (2 + 2 = 4) is correct, and 2 for the second question (10 - 7 = 3) is also correct.
+
 
 ####
 ####This example demonstrates the main functionalities: user registration, login, creating a quiz, and submitting quiz answers.
