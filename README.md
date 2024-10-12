@@ -13,6 +13,7 @@ Here’s a high-level overview of the project and the steps you can follow:
 
 
 #Install Dependencies:
+
 express: Web framework for building the API.
 mongoose: MongoDB ODM for defining schemas and interacting with the database.
 bcryptjs: For password hashing.
