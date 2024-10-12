@@ -14,6 +14,7 @@ jsonwebtoken: For handling authentication tokens.
 body-parser: Middleware for parsing incoming request bodies.
 
 #Folder Structure:
+
 online-quiz-api/
 ├── config/
 │   └── db.js
